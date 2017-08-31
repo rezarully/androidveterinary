@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_inap_rekam_medis_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.rsh.android.rekammedisbosimrsh.inaprm.InapRekamMedisTambah">
+
+        <Spinner
+            android:id="@+id/spinner_pasien_inap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_marginRight="20dp"
+                    android:text="ID Registrasi"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_marginRight="20dp"
+                    android:text="Pemilik"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_marginRight="20dp"
+                    android:text="Nama Hewan"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_tambah_rm_inap_id_registrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_tambah_rm_inap_nama_pemilik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_tambah_rm_inap_nama_hewan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Umum" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Nama Mahasiswa Koas" />
+
+        <EditText
+            android:id="@+id/edit_rm_inap_nama_mahasiswa"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Semester Mahasiswa" />
+
+        <EditText
+            android:id="@+id/edit_rm_inap_semester_mahasiswa"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Berat Badan" />
+
+        <EditText
+            android:id="@+id/edit_rm_inap_berat_badan"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Diagnosis" />
+
+        <EditText
+            android:id="@+id/edit_rm_inap_diagnosis"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Pengobatan" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="PSSM" />
+
+        <Spinner
+            android:id="@+id/spinner_pssm_inap_pasien_1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingRight="16dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/RmHeader"
+            android:text="Pengobatan" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_pengobatan_1"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Keterangan Pengobatan" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_ket_pengobatan_1"
+            style="@style/RmEditBody" />
+
+        <Button
+            android:id="@+id/btn_rm_inap_tambah_pengobatan_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah" />
+
+        <!--Pengobatan 2-->
+        <LinearLayout
+            android:id="@+id/ll_pengobatan_inap_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="PSSM" />
+
+            <Spinner
+                android:id="@+id/spinner_pssm_inap_pasien_2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Pengobatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_pengobatan_2"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Keterangan Pengobatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_ket_pengobatan_2"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_rm_inap_tambah_pengobatan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah" />
+
+                <Button
+                    android:id="@+id/btn_rm_inap_hapus_pengobatan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Pengobatan 3-->
+
+        <LinearLayout
+            android:id="@+id/ll_pengobatan_inap_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="PSSM" />
+
+            <Spinner
+                android:id="@+id/spinner_pssm_inap_pasien_3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Pengobatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_pengobatan_3"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Keterangan Pengobatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_ket_pengobatan_3"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_rm_inap_tambah_pengobatan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah" />
+
+                <Button
+                    android:id="@+id/btn_rm_inap_hapus_pengobatan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Pengobatan 4-->
+        <LinearLayout
+            android:id="@+id/ll_pengobatan_inap_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="PSSM" />
+
+            <Spinner
+                android:id="@+id/spinner_pssm_inap_pasien_4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Pengobatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_pengobatan_4"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Keterangan Pengobatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_ket_pengobatan_4"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_rm_inap_tambah_pengobatan_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah" />
+
+                <Button
+                    android:id="@+id/btn_rm_inap_hapus_pengobatan_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Status Inap"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_status_inap"
+            style="@style/RmEditBody"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Obat" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Nama Obat" />
+
+        <!--<EditText
+            android:id="@+id/edit_pasien_rm_inap_nama_obat"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Jumlah Resep" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_jumlah_resep"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Satuan Resep" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_satuan_resep"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Perintah Pembuatan" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_perintah_pembuatan"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Petunjuk Penggunaan" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_inap_petunjuk_penggunaan"
+            style="@style/RmEditBody" />-->
+
+        <!--Resep 1-->
+        <LinearLayout
+            android:id="@+id/ll_rm_inap_resep_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Jumlah" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Satuan" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r1o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r1j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r1o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r1o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r1o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r1j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r1o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r1o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 3-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r1o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r1j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r1o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r1o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r1o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r1j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r1o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r1o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r1o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r1j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r1s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r1o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r1o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Perintah Pembuatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_perintah_pembuatan_resep_1"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Petunjuk Penggunaan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_petunjuk_penggunaan_resep_1"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_inap_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Resep" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_inap_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus Resep"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 2-->
+        <LinearLayout
+            android:id="@+id/ll_rm_inap_resep_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Jumlah" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Satuan" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r2o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r2j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r2o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r2o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r2o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r2j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r2o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r2o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 3-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r2o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r2j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r2o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r2o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r2o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r2j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r2o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r2o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r2o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r2j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r2s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r2o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r2o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Perintah Pembuatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_perintah_pembuatan_resep_2"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Petunjuk Penggunaan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_petunjuk_penggunaan_resep_2"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_inap_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Resep" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_inap_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus Resep" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 3-->
+        <LinearLayout
+            android:id="@+id/ll_rm_inap_resep_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Jumlah" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Satuan" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r3o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r3j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r3o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r3o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r3o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r3j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r3o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r3o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r3o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r3j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r3o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r3o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r3o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r3j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r3o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r3o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r3o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r3j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r3s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r3o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r3o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Perintah Pembuatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_perintah_pembuatan_resep_3"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Petunjuk Penggunaan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_petunjuk_penggunaan_resep_3"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_inap_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Resep" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_inap_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus Resep" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 4-->
+        <LinearLayout
+            android:id="@+id/ll_rm_inap_resep_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Jumlah" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Satuan" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r4o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r4j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r4o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r4o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r4o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r4j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r4o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r4o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 3-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r4o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r4j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r4o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r4o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r4o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r4j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r4o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r4o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r4o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r4j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r4s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r4o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r4o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Perintah Pembuatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_perintah_pembuatan_resep_4"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Petunjuk Penggunaan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_petunjuk_penggunaan_resep_4"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_inap_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Resep" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_inap_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus Resep" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 5-->
+        <LinearLayout
+            android:id="@+id/ll_rm_inap_resep_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Jumlah" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Satuan" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r5o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r5j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r5o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r5o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r5o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r5j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r5o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r5o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r5o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r5j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r5o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r5o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r5o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r5j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r5o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r5o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_inap_r5o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_inap_r5j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_inap_r5s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_inap_r5o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_inap_r5o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Perintah Pembuatan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_perintah_pembuatan_resep_5"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Petunjuk Penggunaan" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_inap_petunjuk_penggunaan_resep_5"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_inap_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah Resep"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_inap_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus Resep" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Foto"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_edit_rm_inap_foto_1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add"/>
+
+            <ImageView
+                android:id="@+id/image_edit_rm_inap_foto_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add"/>
+
+            <ImageView
+                android:id="@+id/image_edit_rm_inap_foto_3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add"/>
+
+            <ImageView
+                android:id="@+id/image_edit_rm_inap_foto_4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

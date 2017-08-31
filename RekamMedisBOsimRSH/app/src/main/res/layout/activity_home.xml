@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rsh.android.rekammedisbosimrsh.Home">
+
+    <!--<ImageView
+        android:id="@+id/logo_ugm"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_ugm50" />
+
+    <TextView
+        android:id="@+id/title_app"
+        style="?android:textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_ugm"
+        android:layout_centerHorizontal="true"
+        android:text="RSH Prof. Soeparwi" />
+
+    <TextView
+        android:id="@+id/title_app2"
+        style="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Aplikasi Rekam Medis" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital X"
+        android:textSize="40dp"
+        android:id="@+id/hospital_title"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hospital_title"
+        android:text="Medical Record"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:id="@+id/medrec"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medrec"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btn_data_pasien"
+            style="?android:textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Patients Queue"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_pasien_inap"
+            style="?android:textAppearanceMedium"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/btn_data_pasien"
+            android:text="Inpatients List"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_1"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_rekam_medis"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Outpatient Medical Records List"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Button
+            android:id="@+id/btn_rekam_medis_inap"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_rekam_medis"
+            android:layout_centerHorizontal="true"
+            android:text="Inpatient Medical Records List"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored" />
+
+
+</RelativeLayout>

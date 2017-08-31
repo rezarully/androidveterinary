@@ -1,0 +1,2560 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".pasien.PasienTambahRekamMedis">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Registration ID"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Owner"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Patient"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_pasien_rm_id_registrasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_pasien_rm_nama_pemilik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_pasien_rm_nama_hewan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="General" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Medical Personnel" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_tenaga_medis"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Koas Student" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_mahasiswa"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Anamnesis and Praesens Status" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Anamnesis" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_anamnesis"
+            style="@style/RmEditBody"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="General Condition" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_keadaan_umum"
+            style="@style/RmEditBody"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Breath Frequency" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_frek_nafas"
+                style="@style/RmEditBody"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/minutes" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Pulses Frequency" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_frek_pulsus"
+                style="@style/RmEditBody"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/minutes"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Body Temperature" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_temperatur_tubuh"
+                style="@style/RmEditBody"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'C" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Hair Skin" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_kulit_rambut"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Mucous Membrane" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_selaput_lendir"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Lymph Gland" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_kelenjar_limfe"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Respiratory" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_pernafasan"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Blood Circulation" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_peredaran_darah"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Digestive" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_pencernaan"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Genitourinary" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_kelamin_perkencingan"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Nerves" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_syaraf"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Limbs" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_anggota_gerak"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Weight" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_berat_badan"
+                style="@style/RmEditBody"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="grams" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Other" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_lain_anamnesis"
+            style="@style/RmEditBody" />
+
+        <!--Laboratorium-->
+        <TextView
+            style="@style/RmCategory"
+            android:text="Laboratory" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Laboratory Check Up" />
+
+        <Spinner
+            android:id="@+id/spinner_rm_lab_1"
+            style="@style/BodyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="16dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Laboratory Information" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_ket_lab_1"
+            style="@style/RmEditBody" />
+
+        <Button
+            android:id="@+id/btn_tambah_lab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <!--LAB 2-->
+        <LinearLayout
+            android:id="@+id/ll_rm_lab_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Check Up" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_lab_2"
+                style="@style/BodyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_lab_2"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_lab_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_lab_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--LAB 3-->
+        <LinearLayout
+            android:id="@+id/ll_rm_lab_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Chech Up" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_lab_3"
+                style="@style/BodyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_lab_3"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_lab_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_lab_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--LAB 4-->
+        <LinearLayout
+            android:id="@+id/ll_rm_lab_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Check Up" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_lab_4"
+                style="@style/BodyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_lab_4"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_lab_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_lab_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--LAB 5-->
+        <LinearLayout
+            android:id="@+id/ll_rm_lab_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Check Up" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_lab_5"
+                style="@style/BodyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Laboratory Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_lab_5"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_lab_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_lab_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Diagnosis and Prognosis" />
+
+        <!--DIAPROG-->
+        <!--Diagnois 1-->
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Diagnosis" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_diagnosis_1"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Prognosis" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_prognosis_1"
+            style="@style/RmEditBody" />
+
+        <Button
+            android:id="@+id/btn_tambah_diagnosis_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <!--Diagnosis 2-->
+        <LinearLayout
+            android:id="@+id/ll_diaprog_rm_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Diagnosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_diagnosis_2"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Prognosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_prognosis_2"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_diagnosis_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_diagnosis_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Diagnosis 3-->
+        <LinearLayout
+            android:id="@+id/ll_diaprog_rm_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Diagnosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_diagnosis_3"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Prognosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_prognosis_3"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_diagnosis_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_diagnosis_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Diagnosis 2-->
+        <LinearLayout
+            android:id="@+id/ll_diaprog_rm_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Diagnosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_diagnosis_4"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Prognosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_prognosis_4"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_diagnosis_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_diagnosis_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Diagnosis 5-->
+        <LinearLayout
+            android:id="@+id/ll_diaprog_rm_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Diagnosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_diagnosis_5"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Prognosis" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_prognosis_5"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_diagnosis_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_diagnosis_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Medicine" />
+
+        <!--Resep 1-->
+        <LinearLayout
+            android:id="@+id/ll_rm_resep_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Quantity" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Unit" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r1o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r1j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r1o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r1o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_r1o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r1j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r1o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r1o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r1o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r1j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r1o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r1o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_r1o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r1j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r1o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r1o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_r1o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r1j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r1s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r1o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r1o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Production Order" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_perintah_pembuatan_resep_1"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Instruction" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_petunjuk_penggunaan_resep_1"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recipe" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Resep"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 2-->
+        <LinearLayout
+            android:id="@+id/ll_rm_resep_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Quantity" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Unit" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r2o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r2j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r2o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r2o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_r2o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r2j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r2o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r2o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 3-->
+            <LinearLayout
+                android:id="@+id/ll_r2o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r2j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r2o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r2o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_r2o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r2j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r2o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r2o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_r2o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r2j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r2s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r2o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r2o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Production Order" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_perintah_pembuatan_resep_2"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Instruction" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_petunjuk_penggunaan_resep_2"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recipe" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Recipe" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 3-->
+        <LinearLayout
+            android:id="@+id/ll_rm_resep_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Quantity" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Unit" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r3o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r3j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r3o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r3o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_r3o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r3j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r3o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r3o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r3o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r3j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r3o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r3o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_r3o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r3j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r3o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r3o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_r3o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r3j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r3s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r3o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r3o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Production Order" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_perintah_pembuatan_resep_3"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Instruction" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_petunjuk_penggunaan_resep_3"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recipe" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Recipe" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 4-->
+        <LinearLayout
+            android:id="@+id/ll_rm_resep_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Quantity" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Unit" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r4o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r4j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r4o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r4o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_r4o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r4j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r4o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r4o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 3-->
+            <LinearLayout
+                android:id="@+id/ll_r4o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r4j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r4o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r4o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_r4o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r4j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r4o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r4o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_r4o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r4j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r4s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r4o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r4o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Production Order" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_perintah_pembuatan_resep_4"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Instruction" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_petunjuk_penggunaan_resep_4"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Recipe" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Recipe" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Resep 5-->
+        <LinearLayout
+            android:id="@+id/ll_rm_resep_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="R/" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Quantity" />
+
+                <TextView
+                    style="@style/RmHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Unit" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r5o1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5o1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r5j1"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r5o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r5o1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <!--End Obat 1-->
+
+            <!--Obat 2-->
+            <LinearLayout
+                android:id="@+id/ll_r5o2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5o2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r5j2"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r5o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r5o2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 2-->
+
+            <!--Obat 1-->
+            <LinearLayout
+                android:id="@+id/ll_r5o3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5o3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r5j3"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r5o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r5o3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 3-->
+
+            <!--Obat 4-->
+            <LinearLayout
+                android:id="@+id/ll_r5o4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5o4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r5j4"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r5o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r5o4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+            <!--End Obat 4-->
+
+            <!--Obat 5-->
+            <LinearLayout
+                android:id="@+id/ll_r5o5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5o5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/edit_pasien_rm_r5j5"
+                    style="@style/RmEditBody"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+
+                <Spinner
+                    android:id="@+id/spinner_rm_r5s5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/btn_tambah_r5o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/btn_minus_r5o5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <!--End Obat 5-->
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Production Order" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_perintah_pembuatan_resep_5"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Instruction" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_petunjuk_penggunaan_resep_5"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_resep_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Medical Recipe"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_hapus_resep_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Recipe" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Action" />
+
+        <!--Tindakan-->
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Action Name" />
+
+        <Spinner
+            android:id="@+id/spinner_rm_tindakan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingRight="16dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Action Quantity" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_jumlah_tindakan_1"
+            style="@style/RmEditBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Action Information" />
+
+        <EditText
+            android:id="@+id/edit_pasien_rm_ket_tindakan_1"
+            style="@style/RmEditBody" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_tambah_tindakan_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+        </LinearLayout>
+
+        <!--Tindakan 2-->
+        <LinearLayout
+            android:id="@+id/ll_tindakan_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Name" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_tindakan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Quantity" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_jumlah_tindakan_2"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_tindakan_2"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_tindakan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_tindakan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Tindakan 3-->
+        <LinearLayout
+            android:id="@+id/ll_tindakan_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Name" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_tindakan3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Quantity" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_jumlah_tindakan_3"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_tindakan_3"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_tindakan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_tindakan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Tindakan 4-->
+        <LinearLayout
+            android:id="@+id/ll_tindakan_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Name" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_tindakan4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Quantity" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_jumlah_tindakan_4"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_tindakan_4"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_tindakan_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/btn_hapus_tindakan_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Tindakan 5-->
+        <LinearLayout
+            android:id="@+id/ll_tindakan_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Name" />
+
+            <Spinner
+                android:id="@+id/spinner_rm_tindakan5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Quantity" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_jumlah_tindakan_5"
+                style="@style/RmEditBody" />
+
+            <TextView
+                style="@style/RmHeader"
+                android:text="Action Information" />
+
+            <EditText
+                android:id="@+id/edit_pasien_rm_ket_tindakan_5"
+                style="@style/RmEditBody" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_tambah_tindakan_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_hapus_tindakan_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Photo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_pasien_rm_foto1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add" />
+
+            <ImageView
+                android:id="@+id/image_pasien_rm_foto2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add" />
+
+            <ImageView
+                android:id="@+id/image_pasien_rm_foto3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add" />
+
+            <ImageView
+                android:id="@+id/image_pasien_rm_foto4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:src="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

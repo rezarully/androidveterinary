@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Medical Record App</string>
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Pets</string>
+    <string name="input_pasien_activity_title">Tambah Pasien</string>
+    <string name="editor_activity_title_new_pet">Add a Pet</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="category_overview">Hewan</string>
+    <string name="category_registrasi">Nomor Registrasi</string>
+    <string name="category_no_rm">Nomor Rekam Medis</string>
+    <string name="category_gender">Gender</string>
+    <string name="category_measurement">Berat</string>
+    <string name="category_pemilik">Nama Pemilik</string>
+    <string name="category_ttl">Tanggal Lahir</string>
+    <string name="hint_patient_name">Nama Hewan</string>
+    <string name="hint_nama_pemilik">Nama Pemilik</string>
+    <string name="hint_jenis_hewan">Jenis Hewan</string>
+    <string name="hint_ttl">DD MM YYYY</string>
+    <string name="hint_pet_weight">Berat Badan Hewan</string>
+    <string name="hint_registrasi">Nomor Registrasi</string>
+    <string name="hint_no_rm">Nomor Rekam Medis</string>
+    <string name="unit_pet_weight">kg</string>
+    <string name="gender_unknown">Unknown</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="category_username">Username</string>
+    <string name="hint_username">Username Mahasiswa</string>
+    <string name="category_status_antrian">Status Antrian</string>
+    <string name="hint_status_antrian">No Antrian</string>
+    <string name="hint_gender">Jantan/Betina</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="category_upload_image">Foto Pasien</string>
+    <string name="lihat_pasien">Lihat Pasien</string>
+    <string name="rekam_medis">Outpatient Record</string>
+    <string name="input_pasien">Tambah Pasien</string>
+    <string name="update_pasien">Update Pasien</string>
+    <string name="input_rekam_medis">Add Medical Record</string>
+    <string name="lihat_rekam_medis">Outpatient</string>
+    <string name="data_pasien">Patient Queue</string>
+    <string name="tambah_rekam_medis_inap">Add Inpatient Medical Record</string>
+    <string name="rekam_medis_inap">Inpatient Record</string>
+    <string name="lihat_rekam_medis_inap">Inpatient</string>
+    <string name="rekam_medis_pasien">Patient Medical Record</string>
+    <string name="action_rekam_medis_inap">Rekam Medis Inap</string>
+
+    <string-array name="array_jenis_hewan">
+        <item>Anjing</item>
+        <item>Kucing</item>
+        <item>Unggas</item>
+        <item>Eksotis</item>
+    </string-array>
+
+    <string-array name="array_pssm">
+        <item>Pagi</item>
+        <item>Siang</item>
+        <item>Sore</item>
+        <item>Malam</item>
+    </string-array>
+
+    <string-array name="array_satuan_obat">
+        <item>tab</item>
+        <item>cap</item>
+        <item>ampul</item>
+        <item>vial</item>
+        <item>ml</item>
+        <item>sendok makan</item>
+        <item>sendok teh</item>
+        <item>q.s</item>
+    </string-array>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="rsh_rekam_medis">Medical Record</string>
+    <string name="pasien_inap">Inpatients</string>
+</resources>

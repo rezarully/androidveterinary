@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pasien.PasienLihat">
+
+    <ImageView
+        android:id="@+id/img_profil"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_person" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_lihat_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <!--no registrasi-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Registrasi" />
+
+            <TextView
+                android:id="@+id/tv_no_registrasi"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--no rekam medis-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Rekam Medis" />
+
+            <TextView
+                android:id="@+id/tv_no_rm"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--nama pemilik-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pemilik" />
+
+            <TextView
+                android:id="@+id/tv_nama_pemilik"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--nama hewan-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Hewan" />
+
+            <TextView
+                android:id="@+id/tv_nama_hewan"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--jenis Hewan-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Hewan" />
+
+            <TextView
+                android:id="@+id/tv_jenis_hewan"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--Jenis Kelamin-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <TextView
+                android:id="@+id/tv_signalemen_kelamin"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--ttl-->
+            <TextView
+                style="@style/HeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat tanggal lahir hewan" />
+
+            <TextView
+                android:id="@+id/tv_signalemen_ttl"
+                style="@style/BodyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

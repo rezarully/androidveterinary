@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.rsh.android.rekammedisbosimrsh.rekammedis.RekamMedisLihat">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_lihat_rekam_medis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="General" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Registration ID" />
+
+        <TextView
+            android:id="@+id/tv_rm_id_regstrasi"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Owner Name" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_pemilik"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Patient Name" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_hewan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Medical Personnel" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_tenaga_medis"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Koas Student" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_mahasiswa"
+            style="@style/RmBody"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Examination" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Anamnesis" />
+
+        <TextView
+            android:id="@+id/tv_rm_anamnesis"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="General Condition" />
+
+        <TextView
+            android:id="@+id/tv_rm_keadaan_umum"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Breath Frequency" />
+
+        <TextView
+            android:id="@+id/tv_rm_frek_nafas"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Pulses Frequency" />
+
+        <TextView
+            android:id="@+id/tv_rm_frek_pulsus"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Body Temperature" />
+
+        <TextView
+            android:id="@+id/tv_rm_temperatur_tubuh"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Hair Skin" />
+
+        <TextView
+            android:id="@+id/tv_rm_kulit_rambut"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Mucous Membrane" />
+
+        <TextView
+            android:id="@+id/tv_rm_selaput_lendir"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Lymph Gland" />
+
+        <TextView
+            android:id="@+id/tv_rm_kelenjar_limfe"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Respiratory" />
+
+        <TextView
+            android:id="@+id/tv_rm_pernafasan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Blood Circulation" />
+
+        <TextView
+            android:id="@+id/tv_rm_peredaran_darah"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Digestive" />
+
+        <TextView
+            android:id="@+id/tv_rm_pencernaan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Genitouranry" />
+
+        <TextView
+            android:id="@+id/tv_rm_kelamin_perkencingan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Nerves" />
+
+        <TextView
+            android:id="@+id/tv_rm_syaraf"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Limb" />
+
+        <TextView
+            android:id="@+id/tv_rm_anggota_gerak"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Weight" />
+
+        <TextView
+            android:id="@+id/tv_rm_berat_badan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Other" />
+
+        <TextView
+            android:id="@+id/tv_rm_lain_anamnesis"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Treatment" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_pmeriksaan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Laboratory Information" />
+
+        <TextView
+            android:id="@+id/tv_rm_ket_lab"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Diagnosis" />
+
+        <TextView
+            android:id="@+id/tv_rm_diagnosis"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Prognosis" />
+
+        <TextView
+            android:id="@+id/tv_rm_prognosis"
+            style="@style/RmBody"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Medicine" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Medicine Name" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_obat"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Recipe Quantity" />
+
+        <TextView
+            android:id="@+id/tv_rm_jumlah_resep"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Recipe Unit" />
+
+        <TextView
+            android:id="@+id/tv_rm_satuan_resep"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Production Order" />
+
+        <TextView
+            android:id="@+id/tv_rm_perintah_pembuatan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Instruction" />
+
+        <TextView
+            android:id="@+id/tv_rm_petunjuk_penggunaan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Action" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Action Name" />
+
+        <TextView
+            android:id="@+id/tv_rm_nama_tindakan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Action Quantity" />
+
+        <TextView
+            android:id="@+id/tv_rm_qty_tindakan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmHeader"
+            android:text="Action Information" />
+
+        <TextView
+            android:id="@+id/tv_rm_ket_tindakan"
+            style="@style/RmBody" />
+
+        <TextView
+            style="@style/RmCategory"
+            android:text="Photo" />
+
+        <ImageView
+            android:id="@+id/image_rm_foto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image_rm_foto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image_rm_foto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image_rm_foto4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
